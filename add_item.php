@@ -13,7 +13,7 @@ $product_price = $product_data->price;
 if (isset($_SESSION["shopping_cart"])) {
 	$is_available = 0;
 	foreach ($_SESSION["shopping_cart"] as $key => $values){
-		if ($_SESSION["shopping_cart"][$keys]['produst_id'] == $product_id){
+		if ($_SESSION["shopping_cart"][$keys]['product_id'] == $product_id){
 
 				$_SESSION["shopping_cart"][$keys]['product_quantity'] = $_SESSION["shopping_cart"][$keys]['product_quantity'] +1;
 
